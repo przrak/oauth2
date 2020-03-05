@@ -1,5 +1,6 @@
 package com.stl.crm.security;
 
+import com.stl.crm.config.AppConfig;
 import org.springframework.security.web.context.AbstractSecurityWebApplicationInitializer;
 
 /*
@@ -12,6 +13,6 @@ Spring Security использует цепочку фильтров, котор
  */
 public class SecurityWebApplicationInitializer extends AbstractSecurityWebApplicationInitializer {
     public SecurityWebApplicationInitializer() {
-        super(SecurityConfig.class);
+        super(SecurityConfig.class, AppConfig.class);
     }
 }

@@ -7,178 +7,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="44bbb834-bc28-442f-b641-5e8e9dc17365" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.classpath" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/$PROJECT_FILE$" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/crm_oauth2_war.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/crm_oauth2_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/059bd7d1-5961-49da-8669-17b1924081bd.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/059bd7d1-5961-49da-8669-17b1924081bd/storage_v2/_src_/database/oauth2.e8T3wg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/059bd7d1-5961-49da-8669-17b1924081bd/storage_v2/_src_/database/oauth2.e8T3wg/schema/information_schema.FNRwLQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/059bd7d1-5961-49da-8669-17b1924081bd/storage_v2/_src_/database/oauth2.e8T3wg/schema/pg_catalog.0S1ZNQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/059bd7d1-5961-49da-8669-17b1924081bd/storage_v2/_src_/database/oauth2.e8T3wg/schema/public.abK9xQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_7_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_7_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_7_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_h2database_h2_1_4_193.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_istack_istack_commons_runtime_3_0_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_xml_fastinfoset_FastInfoset_1_2_13.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_activation_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_3_0_b170201_1204.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjrt_1_8_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_core_asl_1_9_13.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_mapper_asl_1_9_13.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_jaxb_core_2_3_0_b170127_1453.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_jaxb_runtime_2_3_0_b170127_1453.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_txw2_2_3_0_b170127_1453.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_4_0_2_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_4_2_6_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_entitymanager_4_2_6_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_0_api_1_0_1_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_15_0_GA.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_1_0_GA.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_spec_javax_transaction_jboss_transaction_api_1_1_spec_1_0_1_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jvnet_staxex_stax_ex_1_7_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_postgresql_postgresql_42_2_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_24.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_26.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_1_13_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_1_11_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_oauth_spring_security_oauth2_2_0_10_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_config_4_1_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_4_1_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_4_1_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_3_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_3_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_3_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_3_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_3_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_4_3_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_4_3_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_4_3_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_4_3_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_4_3_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/qaplug_profiles.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/6/2661a54fb9d2a62a18558dfc8ada2c6a9c1e219b" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/f/3f9eebd22676d5e1c574905b5bb9c5537e6aa1c0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/1/814863a0376738ebd503b4e8b4263053fd5822b4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/4/84a08d8cb69fd050b782cd321059b60303708022" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/6/96a85c377fde60fafec824214a1b7737618dc36e" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/0/a052f29e1e878ed81df38171a203cc8d9a28169a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.project" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crm-oauth2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/stl/crm/config/AppConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/stl/crm/config/AppInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/stl/crm/config/DbConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/stl/crm/controller/AboutController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/stl/crm/controller/CustomerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/stl/crm/domain/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/stl/crm/repository/CustomerRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/stl/crm/security/AuthorizationServerConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/stl/crm/security/ResourceServerConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/stl/crm/security/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/stl/crm/security/SecurityWebApplicationInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/stl/crm/service/CustomerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/logback.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/stl/crm/config/AppConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/stl/crm/config/AppInitializer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/stl/crm/config/DbConfig$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/stl/crm/config/DbConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/stl/crm/controller/AboutController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/stl/crm/controller/CustomerController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/stl/crm/domain/Customer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/stl/crm/repository/CustomerRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/stl/crm/security/AuthorizationServerConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/stl/crm/security/ResourceServerConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/stl/crm/security/SecurityConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/stl/crm/security/SecurityWebApplicationInitializer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/stl/crm/service/CustomerService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/logback.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-oauth2.war" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-oauth2/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-oauth2/WEB-INF/classes/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-oauth2/WEB-INF/classes/com/stl/crm/config/AppConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-oauth2/WEB-INF/classes/com/stl/crm/config/AppInitializer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-oauth2/WEB-INF/classes/com/stl/crm/config/DbConfig$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-oauth2/WEB-INF/classes/com/stl/crm/config/DbConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-oauth2/WEB-INF/classes/com/stl/crm/controller/AboutController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-oauth2/WEB-INF/classes/com/stl/crm/controller/CustomerController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-oauth2/WEB-INF/classes/com/stl/crm/domain/Customer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-oauth2/WEB-INF/classes/com/stl/crm/repository/CustomerRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-oauth2/WEB-INF/classes/com/stl/crm/security/AuthorizationServerConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-oauth2/WEB-INF/classes/com/stl/crm/security/ResourceServerConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-oauth2/WEB-INF/classes/com/stl/crm/security/SecurityConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-oauth2/WEB-INF/classes/com/stl/crm/security/SecurityWebApplicationInitializer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-oauth2/WEB-INF/classes/com/stl/crm/service/CustomerService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-oauth2/WEB-INF/classes/logback.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-oauth2/WEB-INF/lib/FastInfoset-1.2.13.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-oauth2/WEB-INF/lib/activation-1.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-oauth2/WEB-INF/lib/antlr-2.7.7.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-oauth2/WEB-INF/lib/aopalliance-1.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-oauth2/WEB-INF/lib/aspectjrt-1.8.10.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-oauth2/WEB-INF/lib/commons-codec-1.9.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-oauth2/WEB-INF/lib/commons-logging-1.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-oauth2/WEB-INF/lib/dom4j-1.6.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-oauth2/WEB-INF/lib/h2-1.4.193.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-oauth2/WEB-INF/lib/hibernate-commons-annotations-4.0.2.Final.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-oauth2/WEB-INF/lib/hibernate-core-4.2.6.Final.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-oauth2/WEB-INF/lib/hibernate-entitymanager-4.2.6.Final.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-oauth2/WEB-INF/lib/hibernate-jpa-2.0-api-1.0.1.Final.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-oauth2/WEB-INF/lib/istack-commons-runtime-3.0.4.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-oauth2/WEB-INF/lib/jackson-annotations-2.7.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-oauth2/WEB-INF/lib/jackson-core-2.7.5.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-oauth2/WEB-INF/lib/jackson-core-asl-1.9.13.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-oauth2/WEB-INF/lib/jackson-databind-2.7.5.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-oauth2/WEB-INF/lib/jackson-mapper-asl-1.9.13.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-oauth2/WEB-INF/lib/javassist-3.15.0-GA.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-oauth2/WEB-INF/lib/jaxb-api-2.3.0-b170201.1204.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-oauth2/WEB-INF/lib/jaxb-core-2.3.0-b170127.1453.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-oauth2/WEB-INF/lib/jaxb-runtime-2.3.0-b170127.1453.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-oauth2/WEB-INF/lib/jboss-logging-3.1.0.GA.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-oauth2/WEB-INF/lib/jboss-transaction-api_1.1_spec-1.0.1.Final.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-oauth2/WEB-INF/lib/jcl-over-slf4j-1.7.24.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-oauth2/WEB-INF/lib/logback-classic-1.2.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-oauth2/WEB-INF/lib/logback-core-1.2.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-oauth2/WEB-INF/lib/postgresql-42.2.5.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-oauth2/WEB-INF/lib/slf4j-api-1.7.26.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-oauth2/WEB-INF/lib/spring-aop-4.3.6.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-oauth2/WEB-INF/lib/spring-beans-4.3.6.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-oauth2/WEB-INF/lib/spring-context-4.3.6.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-oauth2/WEB-INF/lib/spring-core-4.3.6.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-oauth2/WEB-INF/lib/spring-data-commons-1.13.1.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-oauth2/WEB-INF/lib/spring-data-jpa-1.11.1.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-oauth2/WEB-INF/lib/spring-expression-4.3.6.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-oauth2/WEB-INF/lib/spring-jdbc-4.3.6.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-oauth2/WEB-INF/lib/spring-orm-4.3.6.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-oauth2/WEB-INF/lib/spring-security-config-4.1.1.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-oauth2/WEB-INF/lib/spring-security-core-4.1.1.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-oauth2/WEB-INF/lib/spring-security-oauth2-2.0.10.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-oauth2/WEB-INF/lib/spring-security-web-4.1.1.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-oauth2/WEB-INF/lib/spring-tx-4.3.6.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-oauth2/WEB-INF/lib/spring-web-4.3.6.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-oauth2/WEB-INF/lib/spring-webmvc-4.3.6.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-oauth2/WEB-INF/lib/stax-ex-1.7.8.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-oauth2/WEB-INF/lib/txw2-2.3.0-b170127.1453.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/stl/crm/config/AppInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stl/crm/config/AppInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/stl/crm/security/SecurityWebApplicationInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stl/crm/security/SecurityWebApplicationInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/stl/crm/config/AppInitializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/stl/crm/config/AppInitializer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/stl/crm/security/SecurityWebApplicationInitializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/stl/crm/security/SecurityWebApplicationInitializer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-oauth2.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/crm-oauth2.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-oauth2/WEB-INF/classes/com/stl/crm/config/AppInitializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/crm-oauth2/WEB-INF/classes/com/stl/crm/config/AppInitializer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-oauth2/WEB-INF/classes/com/stl/crm/security/SecurityWebApplicationInitializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/crm-oauth2/WEB-INF/classes/com/stl/crm/security/SecurityWebApplicationInitializer.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -291,6 +128,9 @@
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
+    <property name="TF_FMT" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../crm-oauth2-master/crm-oauth2-master" />
@@ -439,12 +279,24 @@
       <workItem from="1583172366829" duration="637000" />
       <workItem from="1583209235479" duration="1206000" />
       <workItem from="1583315777647" duration="1248000" />
-      <workItem from="1583424361126" duration="1320000" />
+      <workItem from="1583424361126" duration="1810000" />
     </task>
+    <task id="LOCAL-00001" summary="chapter 3">
+      <created>1583425723612</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1583425723613</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="chapter 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="chapter 3" />
   </component>
   <component name="WindowStateProjectService">
     <state x="320" y="115" key="#Assign_Data_Sources" timestamp="1583057636524">
@@ -468,10 +320,10 @@
       <screen x="0" y="0" width="2560" height="1409" />
     </state>
     <state x="464" y="178" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable/0.0.2560.1409/3840.503.1920.1050@0.0.2560.1409" timestamp="1583078214017" />
-    <state x="811" y="301" key="CommitChangelistDialog2" timestamp="1583425692042">
+    <state x="811" y="301" key="CommitChangelistDialog2" timestamp="1583425720784">
       <screen x="0" y="0" width="2560" height="1409" />
     </state>
-    <state x="811" y="301" key="CommitChangelistDialog2/0.0.2560.1409/3840.503.1920.1050@0.0.2560.1409" timestamp="1583425692042" />
+    <state x="811" y="301" key="CommitChangelistDialog2/0.0.2560.1409/3840.503.1920.1050@0.0.2560.1409" timestamp="1583425720784" />
     <state x="178" y="157" width="2205" height="1096" key="DiffContextDialog" timestamp="1583425689513">
       <screen x="0" y="0" width="2560" height="1409" />
     </state>
@@ -481,90 +333,90 @@
       <screen x="0" y="0" width="2560" height="1409" />
     </state>
     <state x="1061" y="461" key="FileChooserDialogImpl/0.0.2560.1409/3840.503.1920.1050@0.0.2560.1409" timestamp="1583425325987" />
-    <state width="2080" height="734" key="GridCell.Tab.0.bottom" timestamp="1583425620971">
+    <state width="2080" height="734" key="GridCell.Tab.0.bottom" timestamp="1583426172818">
       <screen x="0" y="0" width="2560" height="1409" />
     </state>
     <state width="1144" height="391" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1583057600125" />
-    <state width="2080" height="734" key="GridCell.Tab.0.bottom/0.0.2560.1409/3840.503.1920.1050@0.0.2560.1409" timestamp="1583425620971" />
+    <state width="2080" height="734" key="GridCell.Tab.0.bottom/0.0.2560.1409/3840.503.1920.1050@0.0.2560.1409" timestamp="1583426172818" />
     <state width="958" height="391" key="GridCell.Tab.0.bottom/0.23.1440.828@0.23.1440.828" timestamp="1581265193624" />
-    <state width="2080" height="734" key="GridCell.Tab.0.center" timestamp="1583425620971">
+    <state width="2080" height="734" key="GridCell.Tab.0.center" timestamp="1583426172817">
       <screen x="0" y="0" width="2560" height="1409" />
     </state>
     <state width="1144" height="391" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1583057600123" />
-    <state width="2080" height="734" key="GridCell.Tab.0.center/0.0.2560.1409/3840.503.1920.1050@0.0.2560.1409" timestamp="1583425620971" />
+    <state width="2080" height="734" key="GridCell.Tab.0.center/0.0.2560.1409/3840.503.1920.1050@0.0.2560.1409" timestamp="1583426172817" />
     <state width="958" height="391" key="GridCell.Tab.0.center/0.23.1440.828@0.23.1440.828" timestamp="1581265193622" />
-    <state width="2080" height="734" key="GridCell.Tab.0.left" timestamp="1583425620971">
+    <state width="2080" height="734" key="GridCell.Tab.0.left" timestamp="1583426172817">
       <screen x="0" y="0" width="2560" height="1409" />
     </state>
     <state width="1144" height="391" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1583057600123" />
-    <state width="2080" height="734" key="GridCell.Tab.0.left/0.0.2560.1409/3840.503.1920.1050@0.0.2560.1409" timestamp="1583425620971" />
+    <state width="2080" height="734" key="GridCell.Tab.0.left/0.0.2560.1409/3840.503.1920.1050@0.0.2560.1409" timestamp="1583426172817" />
     <state width="958" height="391" key="GridCell.Tab.0.left/0.23.1440.828@0.23.1440.828" timestamp="1581265193618" />
-    <state width="2080" height="734" key="GridCell.Tab.0.right" timestamp="1583425620971">
+    <state width="2080" height="734" key="GridCell.Tab.0.right" timestamp="1583426172818">
       <screen x="0" y="0" width="2560" height="1409" />
     </state>
     <state width="1144" height="391" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1583057600124" />
-    <state width="2080" height="734" key="GridCell.Tab.0.right/0.0.2560.1409/3840.503.1920.1050@0.0.2560.1409" timestamp="1583425620971" />
+    <state width="2080" height="734" key="GridCell.Tab.0.right/0.0.2560.1409/3840.503.1920.1050@0.0.2560.1409" timestamp="1583426172818" />
     <state width="958" height="391" key="GridCell.Tab.0.right/0.23.1440.828@0.23.1440.828" timestamp="1581265193623" />
-    <state width="2080" height="734" key="GridCell.Tab.1.bottom" timestamp="1583425620972">
+    <state width="2080" height="734" key="GridCell.Tab.1.bottom" timestamp="1583426172818">
       <screen x="0" y="0" width="2560" height="1409" />
     </state>
     <state width="1144" height="391" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1583057600127" />
-    <state width="2080" height="734" key="GridCell.Tab.1.bottom/0.0.2560.1409/3840.503.1920.1050@0.0.2560.1409" timestamp="1583425620972" />
-    <state width="2080" height="734" key="GridCell.Tab.1.center" timestamp="1583425620971">
+    <state width="2080" height="734" key="GridCell.Tab.1.bottom/0.0.2560.1409/3840.503.1920.1050@0.0.2560.1409" timestamp="1583426172818" />
+    <state width="2080" height="734" key="GridCell.Tab.1.center" timestamp="1583426172818">
       <screen x="0" y="0" width="2560" height="1409" />
     </state>
     <state width="1144" height="391" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1583057600126" />
-    <state width="2080" height="734" key="GridCell.Tab.1.center/0.0.2560.1409/3840.503.1920.1050@0.0.2560.1409" timestamp="1583425620971" />
-    <state width="2080" height="734" key="GridCell.Tab.1.left" timestamp="1583425620971">
+    <state width="2080" height="734" key="GridCell.Tab.1.center/0.0.2560.1409/3840.503.1920.1050@0.0.2560.1409" timestamp="1583426172818" />
+    <state width="2080" height="734" key="GridCell.Tab.1.left" timestamp="1583426172818">
       <screen x="0" y="0" width="2560" height="1409" />
     </state>
     <state width="1144" height="391" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1583057600125" />
-    <state width="2080" height="734" key="GridCell.Tab.1.left/0.0.2560.1409/3840.503.1920.1050@0.0.2560.1409" timestamp="1583425620971" />
-    <state width="2080" height="734" key="GridCell.Tab.1.right" timestamp="1583425620972">
+    <state width="2080" height="734" key="GridCell.Tab.1.left/0.0.2560.1409/3840.503.1920.1050@0.0.2560.1409" timestamp="1583426172818" />
+    <state width="2080" height="734" key="GridCell.Tab.1.right" timestamp="1583426172818">
       <screen x="0" y="0" width="2560" height="1409" />
     </state>
     <state width="1144" height="391" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1583057600126" />
-    <state width="2080" height="734" key="GridCell.Tab.1.right/0.0.2560.1409/3840.503.1920.1050@0.0.2560.1409" timestamp="1583425620972" />
-    <state width="2080" height="734" key="GridCell.Tab.2.bottom" timestamp="1583425620972">
+    <state width="2080" height="734" key="GridCell.Tab.1.right/0.0.2560.1409/3840.503.1920.1050@0.0.2560.1409" timestamp="1583426172818" />
+    <state width="2080" height="734" key="GridCell.Tab.2.bottom" timestamp="1583426172819">
       <screen x="0" y="0" width="2560" height="1409" />
     </state>
     <state width="1144" height="391" key="GridCell.Tab.2.bottom/0.0.1440.900@0.0.1440.900" timestamp="1583057600130" />
-    <state width="2080" height="734" key="GridCell.Tab.2.bottom/0.0.2560.1409/3840.503.1920.1050@0.0.2560.1409" timestamp="1583425620972" />
-    <state width="2080" height="734" key="GridCell.Tab.2.center" timestamp="1583425620972">
+    <state width="2080" height="734" key="GridCell.Tab.2.bottom/0.0.2560.1409/3840.503.1920.1050@0.0.2560.1409" timestamp="1583426172819" />
+    <state width="2080" height="734" key="GridCell.Tab.2.center" timestamp="1583426172819">
       <screen x="0" y="0" width="2560" height="1409" />
     </state>
     <state width="1144" height="391" key="GridCell.Tab.2.center/0.0.1440.900@0.0.1440.900" timestamp="1583057600129" />
-    <state width="2080" height="734" key="GridCell.Tab.2.center/0.0.2560.1409/3840.503.1920.1050@0.0.2560.1409" timestamp="1583425620972" />
-    <state width="2080" height="734" key="GridCell.Tab.2.left" timestamp="1583425620972">
+    <state width="2080" height="734" key="GridCell.Tab.2.center/0.0.2560.1409/3840.503.1920.1050@0.0.2560.1409" timestamp="1583426172819" />
+    <state width="2080" height="734" key="GridCell.Tab.2.left" timestamp="1583426172819">
       <screen x="0" y="0" width="2560" height="1409" />
     </state>
     <state width="1144" height="391" key="GridCell.Tab.2.left/0.0.1440.900@0.0.1440.900" timestamp="1583057600129" />
-    <state width="2080" height="734" key="GridCell.Tab.2.left/0.0.2560.1409/3840.503.1920.1050@0.0.2560.1409" timestamp="1583425620972" />
-    <state width="2080" height="734" key="GridCell.Tab.2.right" timestamp="1583425620972">
+    <state width="2080" height="734" key="GridCell.Tab.2.left/0.0.2560.1409/3840.503.1920.1050@0.0.2560.1409" timestamp="1583426172819" />
+    <state width="2080" height="734" key="GridCell.Tab.2.right" timestamp="1583426172819">
       <screen x="0" y="0" width="2560" height="1409" />
     </state>
     <state width="1144" height="391" key="GridCell.Tab.2.right/0.0.1440.900@0.0.1440.900" timestamp="1583057600130" />
-    <state width="2080" height="734" key="GridCell.Tab.2.right/0.0.2560.1409/3840.503.1920.1050@0.0.2560.1409" timestamp="1583425620972" />
-    <state width="2080" height="734" key="GridCell.Tab.3.bottom" timestamp="1583425620973">
+    <state width="2080" height="734" key="GridCell.Tab.2.right/0.0.2560.1409/3840.503.1920.1050@0.0.2560.1409" timestamp="1583426172819" />
+    <state width="2080" height="734" key="GridCell.Tab.3.bottom" timestamp="1583426172820">
       <screen x="0" y="0" width="2560" height="1409" />
     </state>
     <state width="1144" height="391" key="GridCell.Tab.3.bottom/0.0.1440.900@0.0.1440.900" timestamp="1583057600128" />
-    <state width="2080" height="734" key="GridCell.Tab.3.bottom/0.0.2560.1409/3840.503.1920.1050@0.0.2560.1409" timestamp="1583425620973" />
-    <state width="2080" height="734" key="GridCell.Tab.3.center" timestamp="1583425620973">
+    <state width="2080" height="734" key="GridCell.Tab.3.bottom/0.0.2560.1409/3840.503.1920.1050@0.0.2560.1409" timestamp="1583426172820" />
+    <state width="2080" height="734" key="GridCell.Tab.3.center" timestamp="1583426172820">
       <screen x="0" y="0" width="2560" height="1409" />
     </state>
     <state width="1144" height="391" key="GridCell.Tab.3.center/0.0.1440.900@0.0.1440.900" timestamp="1583057600128" />
-    <state width="2080" height="734" key="GridCell.Tab.3.center/0.0.2560.1409/3840.503.1920.1050@0.0.2560.1409" timestamp="1583425620973" />
-    <state width="2080" height="734" key="GridCell.Tab.3.left" timestamp="1583425620973">
+    <state width="2080" height="734" key="GridCell.Tab.3.center/0.0.2560.1409/3840.503.1920.1050@0.0.2560.1409" timestamp="1583426172820" />
+    <state width="2080" height="734" key="GridCell.Tab.3.left" timestamp="1583426172819">
       <screen x="0" y="0" width="2560" height="1409" />
     </state>
     <state width="1144" height="391" key="GridCell.Tab.3.left/0.0.1440.900@0.0.1440.900" timestamp="1583057600127" />
-    <state width="2080" height="734" key="GridCell.Tab.3.left/0.0.2560.1409/3840.503.1920.1050@0.0.2560.1409" timestamp="1583425620973" />
-    <state width="2080" height="734" key="GridCell.Tab.3.right" timestamp="1583425620973">
+    <state width="2080" height="734" key="GridCell.Tab.3.left/0.0.2560.1409/3840.503.1920.1050@0.0.2560.1409" timestamp="1583426172819" />
+    <state width="2080" height="734" key="GridCell.Tab.3.right" timestamp="1583426172820">
       <screen x="0" y="0" width="2560" height="1409" />
     </state>
     <state width="1144" height="391" key="GridCell.Tab.3.right/0.0.1440.900@0.0.1440.900" timestamp="1583057600128" />
-    <state width="2080" height="734" key="GridCell.Tab.3.right/0.0.2560.1409/3840.503.1920.1050@0.0.2560.1409" timestamp="1583425620973" />
+    <state width="2080" height="734" key="GridCell.Tab.3.right/0.0.2560.1409/3840.503.1920.1050@0.0.2560.1409" timestamp="1583426172820" />
     <state x="370" y="49" key="SettingsEditor" timestamp="1583078536431">
       <screen x="0" y="0" width="2560" height="1409" />
     </state>
