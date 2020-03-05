@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="crm-oauth2:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>crm-oauth2</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="crm-oauth2.war">
+      <element id="artifact" artifact-name="crm-oauth2:war exploded" />
+    </root>
+  </artifact>
+</component>
