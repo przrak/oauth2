@@ -1,5 +1,6 @@
 package com.stl.crm.controller;
 
+import com.stl.crm.security.CrmUserDetails;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -31,7 +32,14 @@ public class CustomerController {
      */	
 	@RequestMapping(value="/customers", method = RequestMethod.GET)
 	public ResponseEntity<?> getCustomers() {
-		
+
+		/**
+		 * Получение информации о текущем пользователе
+		 */
+		Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+		CrmUserDetails principal = (CrmUserDetails) authentication.getPrincipal();
+		System.out.println("logged in user name:: " + principal.getUsername());
+
 		Iterable<Customer> customerList = customerService.getCustomers();
 		return new ResponseEntity<>(customerList, HttpStatus.OK);
 	}
@@ -84,6 +92,12 @@ public class CustomerController {
      * 
      */
     @RequestMapping(value = "/customers/{customerId}", method = RequestMethod.DELETE)
+	/*
+	Добавьте следующую аннотацию PreAuthorize к вышеуказанному методу deleteCustomer.
+	Добавление аннотации PreAuthorize к методу будет соответственно ограничивать доступ к этому методу.
+	@PreAuthorize(“hasAuthority(‘ROLE_ADMIN’)”)
+	 */
+	@PreAuthorize("hasAuthority('ROLE_ADMIN')")
     public ResponseEntity<?> deleteCustomer(@PathVariable long customerId) {
     	Customer customer = customerService.getCustomer(customerId);
     	customerService.deleteCustomer(customer);

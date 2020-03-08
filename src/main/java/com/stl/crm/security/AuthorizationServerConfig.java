@@ -23,6 +23,13 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
     private static final int ONE_DAY = 60 * 60 * 24;
     private static final int THIRTY_DAYS = 60 * 60 * 24 * 30;
 
+    /*
+    Нам также необходимо обновить класс AuthorizationServerConfig.
+    Откройте класс AuthorizationServerConfig в пакете com.stl.crm.security.
+     */
+    @Autowired
+    private CrmUserDetailsService crmUserDetailsService;
+
     @Autowired
     private TokenStore tokenStore;
 
@@ -59,12 +66,20 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
     несколько свойств (хранилище токенов, утверждения пользователей и AuthenticationManager) конечных
     точек сервера авторизации.
      */
+//    @Override
+//    public void configure(AuthorizationServerEndpointsConfigurer endpoints) throws Exception {
+//        endpoints
+//                .tokenStore(tokenStore)
+//                .userApprovalHandler(userApprovalHandler)
+//                .authenticationManager(authenticationManager);
+//    }
     @Override
-    public void configure(AuthorizationServerEndpointsConfigurer endpoints) throws Exception {
+    public void configure(AuthorizationServerEndpointsConfigurer endpoints) {
         endpoints
                 .tokenStore(tokenStore)
                 .userApprovalHandler(userApprovalHandler)
-                .authenticationManager(authenticationManager);
+                .authenticationManager(authenticationManager)
+                .userDetailsService(crmUserDetailsService);
     }
 
     /*

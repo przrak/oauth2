@@ -11,6 +11,8 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.config.http.SessionCreationPolicy;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.oauth2.provider.ClientDetailsService;
 import org.springframework.security.oauth2.provider.approval.ApprovalStore;
 import org.springframework.security.oauth2.provider.approval.TokenApprovalStore;
@@ -33,12 +35,40 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     /*
     Метод globalUserDetails устанавливает хранилище пользователей в памяти с двумя пользователями и их ролями.
      */
+    /*
+    Откройте класс SecurityConfig в пакете com.stl.crm.security.
+    Закомментируйте метод globalUserDetails и добавьте код следующим образом. Обязательно импортируйте класс CrmUserDetailsService.
+     */
+//    @Autowired
+//    public void globalUserDetails(AuthenticationManagerBuilder auth) throws Exception {
+//        auth.inMemoryAuthentication()
+//                .withUser("crmadmin").password("crmpass").roles("ADMIN","USER")
+//                .and()
+//                .withUser("crmuser").password("pass123").roles("USER");
+//    }
+
     @Autowired
-    public void globalUserDetails(AuthenticationManagerBuilder auth) throws Exception {
-        auth.inMemoryAuthentication()
-                .withUser("crmadmin").password("crmpass").roles("ADMIN","USER")
-                .and()
-                .withUser("crmuser").password("pass123").roles("USER");
+    private CrmUserDetailsService crmUserDetailsService;
+
+    /*
+    Мы переопределяем метод configure, который принимает AuthenticationManagerBuilder в качестве параметра.
+    В нашей реализации метода мы используем AuthenticationManagerBuilder для добавления экземпляра CrmUserDetailsService.
+    Вот как мы сообщаем Spring Security, где и как получить пользователя приложения из базы данных.
+     */
+    @Override
+    protected void configure(AuthenticationManagerBuilder auth) throws Exception {
+        auth.userDetailsService(crmUserDetailsService)
+                .passwordEncoder(passwordEncoder());
+    }
+
+    /*
+    Помните, мы зашифровали пароли при сохранении учетных данных пользователя в базе данных с использованием алгоритма BCrypt.
+    Мы предоставили экземпляр BCryptPasswordEncoder для AuthenticationManagerBuilder, поэтому Spring Security будет использовать
+    кодировщик паролей для сравнения простой строки, предоставленной пользователем, с зашифрованным хешем, хранящимся в базе данных.
+     */
+    @Bean
+    public PasswordEncoder passwordEncoder() {
+        return new BCryptPasswordEncoder();
     }
 
     @Bean
