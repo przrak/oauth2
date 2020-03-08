@@ -48,7 +48,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     /*
     Метод configure (HttpSecurity http) определяет, какие URL-пути должны быть защищены в нашем приложении.
-    Мы используем antMatchers для предоставления выражений URI в стиле Ant. В этой строке кода
+    Мы используем antMatchers для предоставления выражений URI в стиле Ant.
      */
     @Override
     /*

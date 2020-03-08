@@ -14,6 +14,10 @@ import org.springframework.security.oauth2.provider.token.TokenStore;
 
 @Configuration
 @EnableAuthorizationServer
+/*
+Аннотация @EnableAuthorizationServer используется для настройки и включения сервера авторизации OAuth 2.0 и
+включает различные конечные точки, необходимые для взаимодействия с сервером авторизации.
+ */
 public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdapter {
     private static String REALM = "CRM_REALM";
     private static final int ONE_DAY = 60 * 60 * 24;

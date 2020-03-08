@@ -1,18 +1,18 @@
 
-~squid:UselessImportCheck"URemove this unused import 'org.springframework.security.access.prepost.PreAuthorize'.(ˆ†×ùÿÿÿÿ
+dsquid:S4488d"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(–û‚ùÿÿÿÿ
 qsquid:UselessImportCheck"MRemove this unused import 'org.springframework.security.core.Authentication'.(ñıÓ“
-€squid:UselessImportCheck"\Remove this unused import 'org.springframework.security.core.context.SecurityContextHolder'.(ŒÄæë
-=squid:S1452!"&Remove usage of generic wildcard type.(¡ÓŸß
-_squid:S4488 "HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(‚è¥
-Bsquid:S1452/"&Remove usage of generic wildcard type.(ÚñŠ©øÿÿÿÿ
-_squid:S4488."HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(‡…Şˆ
-Bsquid:S1452<"&Remove usage of generic wildcard type.(¯ÎÎÒüÿÿÿÿ
-\squid:S4684<"@Replace this persistent entity with a simple POJO or DTO object.(¯ÎÎÒüÿÿÿÿ
-asquid:S4488;"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(à¢»ò
+~squid:UselessImportCheck"URemove this unused import 'org.springframework.security.access.prepost.PreAuthorize'.(ˆ†×ùÿÿÿÿ
 =squid:S1452I"&Remove usage of generic wildcard type.(å˜°Æ
-Wsquid:S4684J"@Replace this persistent entity with a simple POJO or DTO object.(€Æ‡
+Bsquid:S1452/"&Remove usage of generic wildcard type.(ÚñŠ©øÿÿÿÿ
+_squid:S4488 "HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(‚è¥
+\squid:S4684<"@Replace this persistent entity with a simple POJO or DTO object.(¯ÎÎÒüÿÿÿÿ
 _squid:S4488H"HReplace "@RequestMapping(method = RequestMethod.PUT)" with "@PutMapping"(ªíìÁ
+=squid:S1452!"&Remove usage of generic wildcard type.(¡ÓŸß
+_squid:S4488."HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(‡…Şˆ
+€squid:UselessImportCheck"\Remove this unused import 'org.springframework.security.core.context.SecurityContextHolder'.(ŒÄæë
+Bsquid:S1452<"&Remove usage of generic wildcard type.(¯ÎÎÒüÿÿÿÿ
+Wsquid:S4684J"@Replace this persistent entity with a simple POJO or DTO object.(€Æ‡
 =squid:S1452W"&Remove usage of generic wildcard type.(ÓÓá­
 jsquid:S4488V"NReplace "@RequestMapping(method = RequestMethod.DELETE)" with "@DeleteMapping"(¹Ç÷¯ùÿÿÿÿ
 =squid:S1452e"&Remove usage of generic wildcard type.(ÿÚ¥
-dsquid:S4488d"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(–û‚ùÿÿÿÿ
+asquid:S4488;"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(à¢»ò

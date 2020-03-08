@@ -1,4 +1,4 @@
 
-Esquid:S1068"+Remove this unused "ONE_DAY" private field.(Îæ÷¶úÿÿÿÿ
-psquid:S2068"V'password' detected in this expression, review this potentially hard-coded credential.(®«Áüÿÿÿÿ
-esquid:S3008"PRename this field "REALM" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(â×Îæ
+rsquid:S2068'"V'password' detected in this expression, review this potentially hard-coded credential.(®«Áüÿÿÿÿ
+Gsquid:S1068"+Remove this unused "ONE_DAY" private field.(Îæ÷¶úÿÿÿÿ
+gsquid:S3008"PRename this field "REALM" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(â×Îæ
