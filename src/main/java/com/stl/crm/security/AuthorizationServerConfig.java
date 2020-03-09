@@ -97,4 +97,37 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
                 .checkTokenAccess("isAuthenticated()")
                 .realm(REALM);
     }
+
+//    @Override
+//    public void configure(AuthorizationServerEndpointsConfigurer endpoints) throws Exception {
+//        // Here you will do non-security configs for end points associated with your Authorization Server
+//        // and can specify details about authentication manager, token generation etc. Sample code below
+//        endpoints
+//                .authenticationManager(this.authenticationManager)
+//                .tokenServices(tokenServices())
+//                .tokenStore(tokenStore())
+//                .accessTokenConverter(accessTokenConverter());
+//    }
+//
+//    @Bean
+//    public TokenStore tokenStore() {
+//        return new JwtTokenStore(accessTokenConverter());
+//    }
+//
+//    @Bean
+//    public JwtAccessTokenConverter accessTokenConverter() {
+//        JwtAccessTokenConverter converter = new JwtAccessTokenConverter();
+//        converter.setSigningKey("abcd");
+//        return converter;
+//    }
+//
+//    @Bean
+//    @Primary
+//    public DefaultTokenServices tokenServices() {
+//        DefaultTokenServices defaultTokenServices = new DefaultTokenServices();
+//        defaultTokenServices.setTokenStore(tokenStore());
+//        defaultTokenServices.setSupportRefreshToken(true);
+//        defaultTokenServices.setTokenEnhancer(accessTokenConverter());
+//        return defaultTokenServices;
+//    }
 }
