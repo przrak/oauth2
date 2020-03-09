@@ -12,6 +12,8 @@ import org.springframework.security.oauth2.config.annotation.web.configurers.Aut
 import org.springframework.security.oauth2.provider.approval.UserApprovalHandler;
 import org.springframework.security.oauth2.provider.token.TokenStore;
 
+import javax.sql.DataSource;
+
 @Configuration
 @EnableAuthorizationServer
 /*
@@ -23,10 +25,6 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
     private static final int ONE_DAY = 60 * 60 * 24;
     private static final int THIRTY_DAYS = 60 * 60 * 24 * 30;
 
-    /*
-    Нам также необходимо обновить класс AuthorizationServerConfig.
-    Откройте класс AuthorizationServerConfig в пакете com.stl.crm.security.
-     */
     @Autowired
     private CrmUserDetailsService crmUserDetailsService;
 
@@ -40,31 +38,37 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
     @Qualifier("authenticationManagerBean")
     private AuthenticationManager authenticationManager;
 
+    @Autowired
+    private DataSource dataSource;
+
     /*
     В первом методе настройки мы регистрируем данные клиента(приложения), не юзера. Для крупномасштабной системы этот
     процесс регистрации клиента будет следовать хорошо зарекомендовавшему себя процессу утверждения
     перед добавлением клиента на сервер авторизации. Для простоты мы храним данные клиента в памяти.
+    Конфигуратор, который определяет сервис сведений о клиенте. Детали клиента могут быть инициализированы, или вы можете просто обратиться к существующему хранилищу.
      */
     @Override
     public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
-        clients
-                .inMemory()
-                .withClient("crmClient1")
-                .secret("crmSuperSecret")
-                .authorizedGrantTypes("password", "refresh_token") //Типы грантов, которые разрешено использовать клиенту
-                .authorities("ROLE_CLIENT", "ROLE_TRUSTED_CLIENT") //Полномочия, которые предоставляются клиенту (обычные полномочия Spring Security)
-                .scopes("read", "write", "trust")
-                //.accessTokenValiditySeconds(ONE_DAY)
-                //Когда мы регистрируем клиента с указанными выше атрибутами, мы также указываем срок действия сгенерированного
-                // токена доступа до 300 секунд (5 минут) и срок действия сгенерированного токена обновления до 30 дней.
-                .accessTokenValiditySeconds(300)
-                .refreshTokenValiditySeconds(THIRTY_DAYS);
+        clients.jdbc(dataSource);
+//        clients
+//                .inMemory()
+//                .withClient("crmClient1")
+//                .secret("crmSuperSecret")
+//                .authorizedGrantTypes("password", "refresh_token") //Типы грантов, которые разрешено использовать клиенту
+//                .authorities("ROLE_CLIENT", "ROLE_TRUSTED_CLIENT") //Полномочия, которые предоставляются клиенту (обычные полномочия Spring Security)
+//                .scopes("read", "write", "trust")
+//                //.accessTokenValiditySeconds(ONE_DAY)
+//                //Когда мы регистрируем клиента с указанными выше атрибутами, мы также указываем срок действия сгенерированного
+//                // токена доступа до 300 секунд (5 минут) и срок действия сгенерированного токена обновления до 30 дней.
+//                .accessTokenValiditySeconds(300)
+//                .refreshTokenValiditySeconds(THIRTY_DAYS);
     }
 
     /*
     Во втором методе configure (AuthorizationServerEndpointsConfigurer endpoints) мы устанавливаем
     несколько свойств (хранилище токенов, утверждения пользователей и AuthenticationManager) конечных
     точек сервера авторизации.
+    Определяет конечные точки авторизации и токена и сервисы токена.
      */
 //    @Override
 //    public void configure(AuthorizationServerEndpointsConfigurer endpoints) throws Exception {
@@ -84,10 +88,13 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
 
     /*
     В последнем методе настройки мы просто переопределяем область безопасности Сервера авторизации.
+    Определяет ограничения безопасности на конечной точке токена.
      */
     @Override
     public void configure(AuthorizationServerSecurityConfigurer oauthServer) {
         oauthServer
+                .tokenKeyAccess("permitAll()")
+                .checkTokenAccess("isAuthenticated()")
                 .realm(REALM);
     }
 }

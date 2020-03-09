@@ -21,6 +21,9 @@ import org.springframework.security.oauth2.provider.client.InMemoryClientDetails
 import org.springframework.security.oauth2.provider.request.DefaultOAuth2RequestFactory;
 import org.springframework.security.oauth2.provider.token.TokenStore;
 import org.springframework.security.oauth2.provider.token.store.InMemoryTokenStore;
+import org.springframework.security.oauth2.provider.token.store.JdbcTokenStore;
+
+import javax.sql.DataSource;
 
 /*
 Аннотация @EnableWebSecurity и WebSecurityConfigurerAdapter работают вместе для обеспечения безопасности нашего приложения.
@@ -31,6 +34,12 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Autowired
     private ClientDetailsService clientDetailsService;
+
+    /*
+    Нам нужно определить свойство dataSource. Добавьте следующий код в начале класса SecurityConfig.
+     */
+    @Autowired
+    private DataSource dataSource;
 
     /*
     Метод globalUserDetails устанавливает хранилище пользователей в памяти с двумя пользователями и их ролями.
@@ -57,7 +66,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
      */
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-        auth.userDetailsService(crmUserDetailsService)
+        auth
+                .userDetailsService(crmUserDetailsService)
                 .passwordEncoder(passwordEncoder());
     }
 
@@ -104,6 +114,16 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                     .realmName("CRM_REALM");
     }
 
+    /*
+    Пути URL, предоставляемые платформой:
+     /oauth/authorize (конечная точка авторизации),
+     /oauth/token (конечная точка токена),
+     /oauth/verify_access (утверждение сообщений пользователя для предоставления здесь),
+     /oauth/error (используется для отображения ошибок на сервере авторизации),
+     /oauth/check_token (используется серверами ресурсов для декодирования токенов доступа),
+     /oauth/token_key (предоставляет открытый ключ для проверки токена при использовании токенов JWT).
+     */
+
 
     /*
     AuthenticationManager: проверяет подлинность запроса
@@ -117,9 +137,14 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     /*
     TokenStore: сохраняет токены OAuth2 в памяти
      */
+//    @Bean
+//    public TokenStore tokenStore() {
+//        return new InMemoryTokenStore();
+//    }
+    //-- use the JdbcTokenStore to store tokens
     @Bean
-    public TokenStore tokenStore() {
-        return new InMemoryTokenStore();
+    public JdbcTokenStore tokenStore() {
+        return new JdbcTokenStore(dataSource);
     }
 
     /*

@@ -16,7 +16,7 @@
     <database id="4" parent="1" name="oauth2">
       <ObjectId>468585</ObjectId>
       <Owner>engage</Owner>
-      <IntrospectionStateNumber>16083</IntrospectionStateNumber>
+      <IntrospectionStateNumber>16097</IntrospectionStateNumber>
       <Current>1</Current>
     </database>
     <database id="5" parent="1" name="postgres">
@@ -98,7 +98,7 @@
       <Comment>standard public schema</Comment>
       <StateNumber>352</StateNumber>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>16084</IntrospectionStateNumber>
+      <IntrospectionStateNumber>16098</IntrospectionStateNumber>
       <Current>1</Current>
     </schema>
     <access-method id="21" parent="4" name="btree">
@@ -170,153 +170,432 @@
       <Owner>engage</Owner>
       <StateNumber>15201</StateNumber>
     </table>
-    <table id="30" parent="20" name="user_role">
+    <table id="30" parent="20" name="oauth_access_token">
+      <ObjectId>521842</ObjectId>
+      <Owner>engage</Owner>
+      <StateNumber>16093</StateNumber>
+    </table>
+    <table id="31" parent="20" name="oauth_approvals">
+      <ObjectId>521862</ObjectId>
+      <Owner>engage</Owner>
+      <StateNumber>16096</StateNumber>
+    </table>
+    <table id="32" parent="20" name="oauth_client_details">
+      <ObjectId>521826</ObjectId>
+      <Owner>engage</Owner>
+      <StateNumber>16086</StateNumber>
+    </table>
+    <table id="33" parent="20" name="oauth_client_token">
+      <ObjectId>521834</ObjectId>
+      <Owner>engage</Owner>
+      <StateNumber>16092</StateNumber>
+    </table>
+    <table id="34" parent="20" name="oauth_code">
+      <ObjectId>521856</ObjectId>
+      <Owner>engage</Owner>
+      <StateNumber>16095</StateNumber>
+    </table>
+    <table id="35" parent="20" name="oauth_refresh_token">
+      <ObjectId>521850</ObjectId>
+      <Owner>engage</Owner>
+      <StateNumber>16094</StateNumber>
+    </table>
+    <table id="36" parent="20" name="user_role">
       <ObjectId>521798</ObjectId>
       <Owner>engage</Owner>
       <StateNumber>16079</StateNumber>
     </table>
-    <table id="31" parent="20" name="users">
+    <table id="37" parent="20" name="users">
       <ObjectId>521803</ObjectId>
       <Owner>engage</Owner>
       <StateNumber>16080</StateNumber>
     </table>
-    <table id="32" parent="20" name="users_user_role">
+    <table id="38" parent="20" name="users_user_role">
       <ObjectId>521811</ObjectId>
       <Owner>engage</Owner>
       <StateNumber>16080</StateNumber>
     </table>
-    <column id="33" parent="29" name="id">
+    <column id="39" parent="29" name="id">
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>15201</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <column id="34" parent="29" name="address">
+    <column id="40" parent="29" name="address">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <StateNumber>15201</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="35" parent="29" name="contact">
+    <column id="41" parent="29" name="contact">
       <Position>3</Position>
       <DataType>varchar(255)|0s</DataType>
       <StateNumber>15201</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="36" parent="29" name="name">
+    <column id="42" parent="29" name="name">
       <Position>4</Position>
       <DataType>varchar(255)|0s</DataType>
       <StateNumber>15201</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="37" parent="29" name="phone">
+    <column id="43" parent="29" name="phone">
       <Position>5</Position>
       <DataType>varchar(255)|0s</DataType>
       <StateNumber>15201</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <index id="38" parent="29" name="customer_pkey">
+    <index id="44" parent="29" name="customer_pkey">
       <ObjectId>468592</ObjectId>
       <StateNumber>15201</StateNumber>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
     </index>
-    <key id="39" parent="29" name="customer_pkey">
+    <key id="45" parent="29" name="customer_pkey">
       <ObjectId>468593</ObjectId>
       <StateNumber>15201</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>customer_pkey</UnderlyingIndexName>
     </key>
-    <column id="40" parent="30" name="id">
+    <column id="46" parent="30" name="token_id">
+      <Position>1</Position>
+      <DataType>varchar(256)|0s</DataType>
+      <StateNumber>16093</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="47" parent="30" name="token">
+      <Position>2</Position>
+      <DataType>bytea|0s</DataType>
+      <StateNumber>16093</StateNumber>
+      <TypeId>17</TypeId>
+    </column>
+    <column id="48" parent="30" name="authentication_id">
+      <Position>3</Position>
+      <DataType>varchar(256)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>16093</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="49" parent="30" name="user_name">
+      <Position>4</Position>
+      <DataType>varchar(256)|0s</DataType>
+      <StateNumber>16093</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="50" parent="30" name="client_id">
+      <Position>5</Position>
+      <DataType>varchar(256)|0s</DataType>
+      <StateNumber>16093</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="51" parent="30" name="authentication">
+      <Position>6</Position>
+      <DataType>bytea|0s</DataType>
+      <StateNumber>16093</StateNumber>
+      <TypeId>17</TypeId>
+    </column>
+    <column id="52" parent="30" name="refresh_token">
+      <Position>7</Position>
+      <DataType>varchar(256)|0s</DataType>
+      <StateNumber>16093</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="53" parent="30" name="oauth_access_token_pkey">
+      <ObjectId>521848</ObjectId>
+      <StateNumber>16093</StateNumber>
+      <ColNames>authentication_id</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <key id="54" parent="30" name="oauth_access_token_pkey">
+      <ObjectId>521849</ObjectId>
+      <StateNumber>16093</StateNumber>
+      <ColNames>authentication_id</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>oauth_access_token_pkey</UnderlyingIndexName>
+    </key>
+    <column id="55" parent="31" name="userid">
+      <Position>1</Position>
+      <DataType>varchar(256)|0s</DataType>
+      <StateNumber>16096</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="56" parent="31" name="clientid">
+      <Position>2</Position>
+      <DataType>varchar(256)|0s</DataType>
+      <StateNumber>16096</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="57" parent="31" name="scope">
+      <Position>3</Position>
+      <DataType>varchar(256)|0s</DataType>
+      <StateNumber>16096</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="58" parent="31" name="status">
+      <Position>4</Position>
+      <DataType>varchar(10)|0s</DataType>
+      <StateNumber>16096</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="59" parent="31" name="expiresat">
+      <Position>5</Position>
+      <DataType>timestamp|0s</DataType>
+      <StateNumber>16096</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <column id="60" parent="31" name="lastmodifiedat">
+      <Position>6</Position>
+      <DataType>timestamp|0s</DataType>
+      <StateNumber>16096</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <column id="61" parent="32" name="client_id">
+      <Position>1</Position>
+      <DataType>varchar(256)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>16086</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="62" parent="32" name="resource_ids">
+      <Position>2</Position>
+      <DataType>varchar(256)|0s</DataType>
+      <StateNumber>16086</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="63" parent="32" name="client_secret">
+      <Position>3</Position>
+      <DataType>varchar(256)|0s</DataType>
+      <StateNumber>16086</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="64" parent="32" name="scope">
+      <Position>4</Position>
+      <DataType>varchar(256)|0s</DataType>
+      <StateNumber>16086</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="65" parent="32" name="authorized_grant_types">
+      <Position>5</Position>
+      <DataType>varchar(256)|0s</DataType>
+      <StateNumber>16086</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="66" parent="32" name="web_server_redirect_uri">
+      <Position>6</Position>
+      <DataType>varchar(256)|0s</DataType>
+      <StateNumber>16086</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="67" parent="32" name="authorities">
+      <Position>7</Position>
+      <DataType>varchar(256)|0s</DataType>
+      <StateNumber>16086</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="68" parent="32" name="access_token_validity">
+      <Position>8</Position>
+      <DataType>integer|0s</DataType>
+      <StateNumber>16086</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="69" parent="32" name="refresh_token_validity">
+      <Position>9</Position>
+      <DataType>integer|0s</DataType>
+      <StateNumber>16086</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="70" parent="32" name="additional_information">
+      <Position>10</Position>
+      <DataType>varchar(4096)|0s</DataType>
+      <StateNumber>16086</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="71" parent="32" name="autoapprove">
+      <Position>11</Position>
+      <DataType>varchar(256)|0s</DataType>
+      <StateNumber>16086</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="72" parent="32" name="oauth_client_details_pkey">
+      <ObjectId>521832</ObjectId>
+      <StateNumber>16086</StateNumber>
+      <ColNames>client_id</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <key id="73" parent="32" name="oauth_client_details_pkey">
+      <ObjectId>521833</ObjectId>
+      <StateNumber>16086</StateNumber>
+      <ColNames>client_id</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>oauth_client_details_pkey</UnderlyingIndexName>
+    </key>
+    <column id="74" parent="33" name="token_id">
+      <Position>1</Position>
+      <DataType>varchar(256)|0s</DataType>
+      <StateNumber>16092</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="75" parent="33" name="token">
+      <Position>2</Position>
+      <DataType>bytea|0s</DataType>
+      <StateNumber>16092</StateNumber>
+      <TypeId>17</TypeId>
+    </column>
+    <column id="76" parent="33" name="authentication_id">
+      <Position>3</Position>
+      <DataType>varchar(256)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>16092</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="77" parent="33" name="user_name">
+      <Position>4</Position>
+      <DataType>varchar(256)|0s</DataType>
+      <StateNumber>16092</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="78" parent="33" name="client_id">
+      <Position>5</Position>
+      <DataType>varchar(256)|0s</DataType>
+      <StateNumber>16092</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="79" parent="33" name="oauth_client_token_pkey">
+      <ObjectId>521840</ObjectId>
+      <StateNumber>16092</StateNumber>
+      <ColNames>authentication_id</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <key id="80" parent="33" name="oauth_client_token_pkey">
+      <ObjectId>521841</ObjectId>
+      <StateNumber>16092</StateNumber>
+      <ColNames>authentication_id</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>oauth_client_token_pkey</UnderlyingIndexName>
+    </key>
+    <column id="81" parent="34" name="code">
+      <Position>1</Position>
+      <DataType>varchar(256)|0s</DataType>
+      <StateNumber>16095</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="82" parent="34" name="authentication">
+      <Position>2</Position>
+      <DataType>bytea|0s</DataType>
+      <StateNumber>16095</StateNumber>
+      <TypeId>17</TypeId>
+    </column>
+    <column id="83" parent="35" name="token_id">
+      <Position>1</Position>
+      <DataType>varchar(256)|0s</DataType>
+      <StateNumber>16094</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="84" parent="35" name="token">
+      <Position>2</Position>
+      <DataType>bytea|0s</DataType>
+      <StateNumber>16094</StateNumber>
+      <TypeId>17</TypeId>
+    </column>
+    <column id="85" parent="35" name="authentication">
+      <Position>3</Position>
+      <DataType>bytea|0s</DataType>
+      <StateNumber>16094</StateNumber>
+      <TypeId>17</TypeId>
+    </column>
+    <column id="86" parent="36" name="id">
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>16074</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <column id="41" parent="30" name="name">
+    <column id="87" parent="36" name="name">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <StateNumber>16074</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <index id="42" parent="30" name="user_role_pkey">
+    <index id="88" parent="36" name="user_role_pkey">
       <ObjectId>521801</ObjectId>
       <StateNumber>16074</StateNumber>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
     </index>
-    <key id="43" parent="30" name="user_role_pkey">
+    <key id="89" parent="36" name="user_role_pkey">
       <ObjectId>521802</ObjectId>
       <StateNumber>16074</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>user_role_pkey</UnderlyingIndexName>
     </key>
-    <column id="44" parent="31" name="id">
+    <column id="90" parent="37" name="id">
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>16075</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <column id="45" parent="31" name="password">
+    <column id="91" parent="37" name="password">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <StateNumber>16075</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="46" parent="31" name="username">
+    <column id="92" parent="37" name="username">
       <Position>3</Position>
       <DataType>varchar(255)|0s</DataType>
       <StateNumber>16075</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <index id="47" parent="31" name="users_pkey">
+    <index id="93" parent="37" name="users_pkey">
       <ObjectId>521809</ObjectId>
       <StateNumber>16075</StateNumber>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
     </index>
-    <key id="48" parent="31" name="users_pkey">
+    <key id="94" parent="37" name="users_pkey">
       <ObjectId>521810</ObjectId>
       <StateNumber>16075</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>users_pkey</UnderlyingIndexName>
     </key>
-    <column id="49" parent="32" name="users_id">
+    <column id="95" parent="38" name="users_id">
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>16076</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <column id="50" parent="32" name="roles_id">
+    <column id="96" parent="38" name="roles_id">
       <Position>2</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>16076</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <index id="51" parent="32" name="uk_4rp52cv20cmk9y0vnoxjv7x39">
+    <index id="97" parent="38" name="uk_4rp52cv20cmk9y0vnoxjv7x39">
       <ObjectId>521814</ObjectId>
       <StateNumber>16078</StateNumber>
       <ColNames>roles_id</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="52" parent="32" name="uk_4rp52cv20cmk9y0vnoxjv7x39">
+    <key id="98" parent="38" name="uk_4rp52cv20cmk9y0vnoxjv7x39">
       <ObjectId>521815</ObjectId>
       <StateNumber>16078</StateNumber>
       <ColNames>roles_id</ColNames>
       <UnderlyingIndexName>uk_4rp52cv20cmk9y0vnoxjv7x39</UnderlyingIndexName>
     </key>
-    <foreign-key id="53" parent="32" name="fk_fy08av1r6nxthkdj7tjrsi330">
+    <foreign-key id="99" parent="38" name="fk_fy08av1r6nxthkdj7tjrsi330">
       <ObjectId>521821</ObjectId>
       <StateNumber>16080</StateNumber>
       <ColNames>users_id</ColNames>
@@ -326,7 +605,7 @@
       <RefKeyName>users_pkey</RefKeyName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <foreign-key id="54" parent="32" name="fk_4rp52cv20cmk9y0vnoxjv7x39">
+    <foreign-key id="100" parent="38" name="fk_4rp52cv20cmk9y0vnoxjv7x39">
       <ObjectId>521816</ObjectId>
       <StateNumber>16079</StateNumber>
       <ColNames>roles_id</ColNames>
