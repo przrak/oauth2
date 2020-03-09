@@ -7,21 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="44bbb834-bc28-442f-b641-5e8e9dc17365" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/sql/client_registration_details.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/sql/oauth_tokens_database.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/059bd7d1-5961-49da-8669-17b1924081bd.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/059bd7d1-5961-49da-8669-17b1924081bd.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/059bd7d1-5961-49da-8669-17b1924081bd/storage_v2/_src_/database/oauth2.e8T3wg/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/059bd7d1-5961-49da-8669-17b1924081bd/storage_v2/_src_/database/oauth2.e8T3wg/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/stl/crm/security/AuthorizationServerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stl/crm/security/AuthorizationServerConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/stl/crm/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stl/crm/security/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/stl/crm/controller/CustomerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/stl/crm/controller/CustomerController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/stl/crm/security/AuthorizationServerConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/stl/crm/security/AuthorizationServerConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/stl/crm/security/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/stl/crm/security/SecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/crm-oauth2.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/crm-oauth2.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/crm-oauth2/WEB-INF/classes/com/stl/crm/controller/CustomerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/crm-oauth2/WEB-INF/classes/com/stl/crm/controller/CustomerController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/crm-oauth2/WEB-INF/classes/com/stl/crm/security/AuthorizationServerConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/crm-oauth2/WEB-INF/classes/com/stl/crm/security/AuthorizationServerConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/crm-oauth2/WEB-INF/classes/com/stl/crm/security/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/crm-oauth2/WEB-INF/classes/com/stl/crm/security/SecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/stl/crm/config/DbConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stl/crm/config/DbConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -287,7 +274,7 @@
       <workItem from="1583209235479" duration="1206000" />
       <workItem from="1583315777647" duration="1248000" />
       <workItem from="1583424361126" duration="2086000" />
-      <workItem from="1583479075542" duration="16995000" />
+      <workItem from="1583479075542" duration="18970000" />
     </task>
     <task id="LOCAL-00001" summary="chapter 3">
       <created>1583425723612</created>

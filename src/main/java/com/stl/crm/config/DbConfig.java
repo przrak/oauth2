@@ -50,6 +50,18 @@ public class DbConfig {
         return dataSource;
     }
 
+//    @Bean
+//    public DataSource datasource() throws PropertyVetoException {
+//        EmbeddedDatabaseBuilder builder = new EmbeddedDatabaseBuilder();
+//        EmbeddedDatabase dataSource = builder
+//                .setType(EmbeddedDatabaseType.H2)
+//                .addScript("sql-scripts/schema.sql")
+//                .addScript("sql-scripts/data.sql")
+//                .build();
+//
+//        return dataSource;
+//    }
+
     @Bean
     public PlatformTransactionManager transactionManager() {
         JpaTransactionManager transactionManager = new JpaTransactionManager();
