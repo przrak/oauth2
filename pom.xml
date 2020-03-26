@@ -12,7 +12,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<org.springframework.version>4.3.6.RELEASE</org.springframework.version>
 		<jackson.version>2.7.5</jackson.version>
-		<spring-data-jpa.version>1.11.1.RELEASE</spring-data-jpa.version>
+		<spring-data-jpa.version>1.11.23.RELEASE</spring-data-jpa.version>
 		<hibernate.version>4.2.6.Final</hibernate.version>
 		<h2database.version>1.4.193</h2database.version>
 		<springsecurity.version>4.1.1.RELEASE</springsecurity.version>
